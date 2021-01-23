@@ -1,0 +1,47 @@
+PHẦN 1 KIẾN THỨC
+a) Bộ chữ viết trong ngôn ngữ C gồm: chữ in hoa và in thường.
++ 26 chữ cái latinh in hoa và in thường (A,B,C...Z ; a,b,c...z).
+  Ngoài ra bộ viết trong ngôn ngữ C còn có  10 chữ số thập phân:( 1,2,3,4,5,6,7,8,9).
+  Các kí tự toán học: (+, -, *, /, =, <, >, (, ).
+  Và các kí hiệu đặc biệt: 🙂. , ; " ' _ @ # $ ! ^ [ ] { } ...).
++ Dấu cách hay khoản trắng, xuống hàng (\n) và tab (\t).
+
+b) Các kiểu dữ liệu cơ sở của C
+        + Kiểu số nguyên
+        + kiểu số thực
+        + kiểu void
+        + kiểu cơ bản
+        + kiểu liệt kê
+        + kiểu nâng cao
+c) Khái niệm và cú pháp khai báo biến trong ngôn ngữ C
+* Khái niệm
++ Một chương trình ứng dung có thể quản lý nhiều loại dữ liệu. Trong trường hợp này, chương trình phải chỉ định cho bộ nhớ cho mỗi đơn vị dữ liệu. Khi chỉ định bộ nhớ, có hai điểm
+cần lưu ý như sau:
+- KÍCH THƯỚC BỘ NHỚ (kiểu dữ liệu)
+- VỊ TRÍ BỘ NHỚ (địa chỉ bộ nhớ )
++ Các ngôn ngữ lập trình hiện đại cho phép chúng ta sử dụng  tên các tượng trưng gọi là BIẾN (variable), chỉ đếm một vùng bộ nhớ nơi mà các giá trị cụ thể được lưu giữ
++ Hệ điều hành hoạt động như một giao diện giữa các ô nhớ và lập trình viên. Lập trình viên không cần lưu tâm về vị trí ô nhớ mà để cho hệ điều hành đảm nhiệm.
+* Cú pháp
++ Kiểu-dữ-liệu tên-biến;
+d)* BIẾN TOÀN CỤC
+- Được khai báo bên ngoài tất cả các hàm (kể cả main)
+- Thường được khai báo tại KHỐI KHAI BÁO
+- Có thể được sử dụng tại mọi vị trí trong chương trình như các hàm, khối lệnh lập for hay while 
+ * BIẾN CỤC BỘ
+ - Được khai báo bên trong các hàm hay khối lệnh
+ - Chỉ có thể được sử dụng trong phạm vi hàm hay khối lệnh
+ - Các tham số của hàm là biến cục bộ của hàm đó
+e)* Định nghĩa hàm
+- Hàm là một khối lệnh (nhiều lệnh) thực hiện một nhiệm vụ cụ thể nào đó (tính tổng, hiển thị thông báo đến người dùng,...)
+- Hàm là một sự chia nhỏ của chương trình.
+  * Phân loại hàm
+- Hàm có 2 loại:
++ hàm thư viện chuẩn
+ Là các hàm được xây dựng sẵn trong ngôn ngữ C như hàm scanf, printf, getchar,...
+ Các hàm này được định nghĩa trong các tập tin có phần mở rộng .h như stdio.h, conio.h,... các tập tin này phải được gộp vào chương trình thông qua chỉ định #include
+ + Hàm do người dùng định nghĩa: định nghĩa theo nhu cầu của người dùng. Các phần tiếp theo sẽ tìm hiểu về cú pháp khai báo, định nghĩa và gọi hàm loại này.
+f) Nguyên tắc hoạt động cảu hàm trong ngôn ngữ C: Nguyên tắc hoạt động cảu hàm trong ngôn ngữ
+ Khi máy gặp lời gọi hàm ở bất kỳ chỗ nào đó thì hàm bắt đầu được thực hiện, tức sẽ rời chỗ đó để đi đến hàm được gọi.
+ Nếu là hàm có tham số thì máy sẽ thực hiện truyền tham số thực cho các tham số hình thức tương ứng trong hàm.
+ Máy bắt đầu thực hiện lần lượt các câu lệnh trong thân hàm đến khi nào lệnh reuturn hoặc dấu } của hàm thì dừng lại thoát khỏi hàm trở về chương trình đã gọi nó và thực hiện tiếp các câu lệnh của chương trình này.
+Nếu hàm trả về giá trị thì giá trị của biểu thức return trong hàm sẽ là giá trị của hàm.
