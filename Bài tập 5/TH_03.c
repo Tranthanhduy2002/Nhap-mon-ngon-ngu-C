@@ -1,26 +1,29 @@
 #include <stdio.h>
-int So_lon_nhat_la ();
  
+
+float a,b,c;
+int So_lon_nhat();
+
+
+
 int main() {
-
-int m,n,l;
-
-printf("Nhap 3 so bat ki tu ban phim : \n");
-printf("m : ");
-scanf("%d", &m);
-printf("n : ");
-scanf("%d", &n);
-printf("l : ");
-scanf("%d", &l);
-
-if(m<n && n<l){
-printf("So lon nhat %d",l);}
-if(m<l && l<n){
-printf("So lon nhat %d",n);}
-if(n<l && l<m)
-{printf("So lon nhat %d",m);}
+printf("Nhap 3 so : \n");
+printf("a : ");
+scanf("%f", &a);
+printf("b : ");
+scanf("%f", &b);
+printf("C : ");
+scanf("%f", &c);
+So_lon_nhat();
   return 0;
 }
-int So_lon_nhat_la (){
-	return 0; 
+
+int So_lon_nhat(){
+if(a<c && b<c){
+printf("%f",c);}
+if(a<b && c<b){
+printf("%f",b);}
+if(b<c && c<a){
+printf("%f",a);}
+return 0;
 }
